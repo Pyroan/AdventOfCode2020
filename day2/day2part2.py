@@ -1,4 +1,3 @@
-from collections import Counter
 l = []
 with open('day2.txt') as f:
     for line in f.readlines():
