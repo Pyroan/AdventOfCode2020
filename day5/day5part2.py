@@ -12,6 +12,6 @@ for line in l:
 
     seats[row*8+col] = True
 
-for i in range(1, len(seats)-1):
-    if seats[i] == False and seats[i-1] == True and seats[i+1] == True:
+for i in range(8, len(seats)-1-8):
+    if not seats[i] and seats[i-1] and seats[i+1]:
         print(i)
